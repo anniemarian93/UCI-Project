@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Basic Meta -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Annie Tafur">
+  <meta name="description" content="This is a site for all plant lovers in the world. Info, Guidance and recommendations about plants">
+  <meta name="viewport" content="width=device-width, initial-scale=1,0">
+
+  <title>Plant lover Site</title>
+
+  <!--LINK TO CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- CSS GRID -->
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto auto;
+      gap: 10px;
+
+      padding: 10px;
+    }
+
+    .grid-item {
+      background-color: linen;
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    .header{
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .footer{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      text-align: center;
+    }
+
+
+  </style>
+
+</head>
+<body>
+    <div class="grid-container">
+
+       <div class="grid-item fade header">1
+        <!-- Navigation bar -->
+        <header class="header">
+          <!-- Logo -->
+          <a href="#" class="logo">Plants</a>
+
+          <!-- ByPass Block for Accessibility -->
+          <a class="Skip-to-content-link" href="#main">Skip to Main Content</a>
+
+          <!-- Hamburger icon -->
+          <input class="side-menu" type="checkbox" id="side-menu"/>
+          <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+          <!-- Menu -->
+          <nav class="nav">
+            <ul class="menu">
+              <li><a href="index2.html" role="button" name="Home Navigation" tabindex="1">Home</a> </li>
+              <li><a href="Contact.html" role="button" name="Contact Navigation" tabindex="3">Contact</a> </li>
+              <li><a href="index2.page2.html" role="button" name="Succulents Navigation" tabindex="2">Succulents</a></li>
+                  <a href="#">Rosa del desierto</a>
+                  <a href="#">Sansevieria</a>
+                  <a href="#">Aloe Vera</a>
+
+            </ul>
+          </nav>
+        </header>
+       </div>
+
+
+
+    <div class="grid-item fade 1" id="main">2
+
+      <h1>Succulents</h1>
+      <p>One of the most popular variety of plants nowadays are succulents.There are many types of succulents, some of them are easy
+        to care, so it is a great type of plant to start. <br>
+        Succulents have thick leaves that are meant to retain water, that's why they won't die easy if you for
+        some reason forget to water them.</p>
+     <img src="https://p0.piqsels.com/preview/804/238/549/united-kingdom-dorchester-succulents-green.jpg" height="300" alt="Succulent picture"/>
+
+    </div>
+
+    <div class="grid-item fade 2">3
+
+      <h2>Sanseviera</h2>
+      <p>One of the most easy plants that is part of the succulent division is called Sansevieria.It easily adapts itself to
+      wherever you decide to grow them, and what is astounding about this plant is its ability to "clean " the air where it is.
+      </p>
+      <img src="https://t2.ev.ltmcdn.com/es/posts/6/8/6/sansevieria_trifasciata_cuidados_1686_orig.jpg" height="300" alt="Sanseviera picture"/>
+
+    </div>
+
+
+    <div class ="grid-item fade footer" >4
+
+      <footer>
+        copyright &copy;2022
+        <address>
+        Lima,Peru
+        </address>
+      </footer>
+
+    </div>
+
+</div>
+</body>
+</html>

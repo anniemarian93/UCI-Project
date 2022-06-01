@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Basic Meta -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Annie Tafur">
+  <meta name="description" content="This is a site for all plant lovers in the world. Info, Guidance and recommendations about plants">
+  <meta name="viewport" content="width=device-width, initial-scale=1,0">
+  <title>Plant lover Site</title>
+
+  <!--LINK TO CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- CSS GRID -->
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 2fr 19%;
+      grid-template-rows: auto auto auto;
+      gap: 10px;
+      background-color: linen;
+      padding: 10px;
+    }
+
+    .grid-item {
+      padding: 10px;
+    }
+
+    .header{
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .footer{
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .shops{
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+        </style>
+
+</head>
+
+<body>
+
+<div class="grid-container">
+
+    <div class="grid-item header">1
+        <!-- Navigation bar -->
+        <header class="header">
+        <!-- Logo -->
+        <a href="#" class="logo">Plant</a>
+
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+        <!-- Menu -->
+        <nav class="nav">
+          <ul class="menu">
+            <li><a href="index2.html">Home</a> </li>
+            <li><a href="index2.page2.html">Succulents</a> </li>
+            <li><a href="#">About</a> </li>
+            <li><a href="Contact.html">Contact</a> </li>
+          </ul>
+        </nav>
+        </header>
+    </div>
+
+    <div class="grid-item">2
+      <main>
+        <h1>Welcome plant lovers around the world !</h1>
+        <p>In this site you will find all about plants. Plants help us to make the air cleaner and make our spaces happier,
+          so we want to help you find the right one for you. <br /> You will find information about all the different types of plants,
+          and some guidance to take care of them.</p>
+        <p> With this info you will see that you don't need a great amount of &#36;&#36;&#36; to take care of your plants, and that you are not a plant killer
+          (in case you have tried before...and it didn't end well)</p>
+        <img src="https://www.ugaoo.com/knowledge-center/wp-content/uploads/2017/05/Small-tree-in-a-sunny-window.jpg" height="300" alt="small tree in a sunny window"/>
+        <audio controls>
+          <source src="Audio/naturesound.mp3" type="audio/mpeg">
+        </audio>
+      </main>
+    </div>
+
+
+    <div class="grid-item3">3
+      <h2>Cheat table for newbies</h2>
+      <p>Some plants are easy to take care of them, and some of them will have you praying that they don't die. But, you don't have to worry,
+        with this table you will have the basic information you need to remind you how frequent you need to water and fertilize your plants depending
+        on the exposure to the Sun. You will see how they react to this schedule and if your plant doesn't like it, it will give you signs that something is
+        not working. With time, you will be an expert in recognizing signs from your plant, but you need patience.</p>
+      <table border="1">
+        <tr>
+          <td>Sun exposure</td>
+          <td>Water</td>
+          <td>Fertilizer</td>
+        </tr>
+        <tr>
+          <td>Total Sun</td>
+          <td>3/4 days</td>
+          <td>3 months</td>
+        </tr>
+        <tr>
+          <td>Partial Sun</td>
+          <td>6/7 days</td>
+          <td>4 months</td>
+        </tr>
+        <tr>
+          <td>Shadow</td>
+          <td>15 days</td>
+          <td>6 months</td>
+        </tr>
+      </table>
+
+    </div>
+
+  <div class="grid-item shops">4
+
+    <h2>Plant Shops in Lima</h2>
+    <p>Buying plants could become a nightmare if you don't search for a good place. When you buy plants you can't easily notice if they are healthy or
+      if they are infected by some bug or disease, so you will need to check the leaves in order to know if they are healthy.<br />
+      Sometimes it happens that you take your new plant to your house, and it starts dying a week after even if you had properly taken care of them.<br />
+      If you are interested in buying a new plant and don{t have these problems, I recommend you visiting and shopping in this plant stores.</p>
+
+    <ul class="links">
+      <li><a href="https://www.mijardin.pe/" target="_blank">Mi Jardin</a></li>
+      <li><a href="https://plantique.pe/" target="_blank">Plantique Boutique</a></li>
+      <li><a href="https://www.sumerlabs.com/catalogo/bosqueminiatura-bosqueminiaturag" target="_blank">Bosque Miniatura</a></li>
+    </ul>
+    <p>There is one variety of plants that is a good one if you want to start in plant world. <b>Succulents</b>
+      If you want to learn more of them, click <a href="index2.page2.html" target="_blank">here</a> </p>
+
+    <p>My final recommendation to start taking care of your plants, is to buy a clay pot, like the ones in this picture.<br />
+      The material, is perfect because it helps to absorb the water they need and evaporates the water they don't, but also helps retains humidity
+      until the next water day.</p>
+    <img src="https://www.hogarmania.com/archivos/201309/ttar032_macetas-de-barro-668x400x80xX.jpg" height="300" alt="clay pot image" />
+
+  </div>
+
+  <div class="grid-item footer">5
+      <footer>
+        copyright &copy;2022
+        <address>
+          Lima, Peru
+        </address>
+      </footer>
+
+  </div>
+</div>
+</body>
+</html>

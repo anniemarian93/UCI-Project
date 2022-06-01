@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Basic Meta -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Annie Tafur">
+  <meta name="description" content="This is a site for all plant lovers in the world. Info, Guidance and recommendations about plants">
+  <meta name="viewport" content="width=device-width, initial-scale=1,0">
+
+  <title>Plant lover Site</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- CSS GRID -->
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto 100% auto;
+      gap: 10px;
+
+      padding: 10px;
+          }
+
+    .grid-item {
+      background-color: linen;
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    .header{
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .footer{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      text-align: center;
+    }
+
+
+  </style>
+
+</head>
+<body>
+<div class =grid-container>
+
+  <div class="grid-item fade  header">
+      <!-- Navigation bar -->
+      <header class="header">
+        <!-- Logo -->
+        <a href="#" class="logo">Plants</a>
+
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+        <!-- Menu -->
+        <nav class="nav">
+          <ul class="menu">
+            <li><a href="index2.html" role="button" name="Home Navigation" tabindex="1">Home</a> </li>
+            <li><a href="index2.page2.html" role="button" name="Succulents Navigation" tabindex="2">Succulents</a> </li>
+            <li><a href="Contact.html" role="button" name="Contact Navigation"  tabindex="3">Contact</a> </li>
+          </ul>
+        </nav>
+      </header>
+</div>
+
+   <div class="grid-item fade" alt="This is a Newsletter form if you want to receive more information in your email">
+     <h1>Newsletter Subscription</h1>
+     <p>Complete this form to receive the latest info to take care of your plants</p>
+
+     <form action="" method="get" class="form-example">
+
+       <div class="form-example">
+         <label for="name">Enter your name: </label>
+         <input type="text" name="name" id="name" required>
+       </div>
+       <div class="form-example">
+         <label for="email">Enter your email: </label>
+         <input type="email" name="email" id="email" required>
+       </div>
+
+
+       <fieldset>
+         <legend>Select your Gender</legend>
+
+         <div>
+           <input type="radio" id="Male" name="gender" value="male"
+                  checked>
+           <label for="male">Male</label>
+         </div>
+
+         <div>
+           <input type="radio" id="Female" name="gender" value="female">
+           <label for="female">Female</label>
+         </div>
+
+
+       </fieldset>
+
+       <fieldset>
+         <legend>Choose your favorite types of plants</legend>
+         <div>
+           <input type="checkbox" id="succulents" name="interest" value="succulents">
+           <label for="succulents">succulents</label>
+         </div>
+         <div>
+           <input type="checkbox" id="flowers" name="interest" value="flowers">
+           <label for="flowers">flowers</label>
+         </div>
+         <div>
+           <input type="checkbox" id="harvest plants" name="interest" value="harvest plants">
+           <label for="harvest plants">harvest plants</label>
+         </div>
+         <div>
+           <input type="checkbox" id="ornamental " name="interest" value="ornamental">
+           <label for="ornamental ">ornamental</label>
+         </div>
+         <div>
+           <input type="checkbox" id="cactus" name="interest" value="cactus">
+           <label for="cactus">cactus</label>
+         </div>
+       </fieldset>
+
+       <div class="form-example">
+         <input type="submit" value="Subscribe!">
+       </div>
+     </form>
+
+
+
+
+   </div>
+
+  <div class ="grid-item fade footer" >4
+
+    <footer>
+      copyright &copy;2022
+      <address>
+        Lima,Peru
+      </address>
+    </footer>
+
+  </div>
+</div>
+</body>
+</html>
